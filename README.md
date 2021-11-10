@@ -1,5 +1,5 @@
 # NewsFirst_Scraper
-This is a very simple python script that can scrapes the newsfirst.lk website based on the given dates.
+This is a very simple python script that can scrapes the newsfirst.lk website based on the given dates. Moreover, It scrapes and stores the obtained data in a text file.
 
 ## How to use this
 ```python
