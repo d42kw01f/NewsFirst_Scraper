@@ -5,18 +5,17 @@ This is a very simple python script that can scrapes the newsfirst.lk website ba
 ```python
 >>> python3 .\newsfirst_scraper.py
 
---> Enter start date: 2014-11-20
---> Enter end date: 2014-11-21
+--> Enter start date: 2014-06-04
+--> Enter end date: 2014-06-05
 
-You Have Entered following information:
-        # Start date: 2014-11-20
-        # End date: 2014-11-21
+        # Start date: 2014-06-04
+        # End date: 2014-06-05
 
 HERE IS THE DATAFRAME:
-        # DatetimeIndex(['2014-11-20', '2014-11-21'], dtype='datetime64[ns]', freq='D')
+DatetimeIndex(['2014-06-04', '2014-06-05'], dtype='datetime64[ns]', freq='D')
 
         # LENGTH OF THE DATAFRAME IS: 2
 
-Confirm: [y/n] y
+Enter y to confirm & start scraping: [y/n]y
   ```
   
