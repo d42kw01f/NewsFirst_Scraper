@@ -17,5 +17,8 @@ DatetimeIndex(['2014-06-04', '2014-06-05'], dtype='datetime64[ns]', freq='D')
         # LENGTH OF THE DATAFRAME IS: 2
 
 Enter y to confirm & start scraping: [y/n]y
+
+articals 28: 100%|█████████████████████████████████████████████████████████████████████████| 2/2 [02:59<00:00, 89.59s/it]
+
   ```
   
