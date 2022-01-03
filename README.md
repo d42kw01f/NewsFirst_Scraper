@@ -1,5 +1,5 @@
 # NewsFirst_Scraper
-This is a very simple python script that can scrape the newsfirst.lk website based on the given dates. Moreover, It scrapes and stores the obtained data in a text file.
+This is a very simple python script that can scrape the [newsfirst.lk](https://www.newsfirst.lk) website based on the given dates. Moreover, It scrapes and stores the obtained data in a text file.
 This script was developed to obtain Sinhalese language data for training Sinhalese NLP models.
 
 ## How to use this
