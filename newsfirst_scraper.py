@@ -1,6 +1,7 @@
 from dateutil import parser
 import requests
 from bs4 import BeautifulSoup
+import os
 import re
 import time
 import pandas as pd
@@ -17,6 +18,7 @@ def scraper(datelist):
         theDate = str(theDate)
         LinkDate = theDate.replace('-','/')
         FileDate = theDate.replace('-','')
+        thisYear = LinkDate.split('/')[0]
         url = f'https://www.newsfirst.lk/sinhala/{LinkDate}/'
 
         r_main = requests.get(url, headers=header)
@@ -38,7 +40,12 @@ def scraper(datelist):
                                 TheRealBodyText = TheRealBodyText.replace("COLOMBO (NEWS1ST) : ", "")
                                 TheRealBodyText = TheRealBodyText.replace("\n", "")
                                 num_artical += 1
-                                with open(f'NewsFirst_Articals/2015/news1st_{FileDate}_{num_artical}.txt', 'w', encoding="utf-8") as file:
+
+                                if not os.path.isdir(thisYear):
+                                    os.makedirs(thisYear)
+                                    print('Created folder: ', thisYear)
+
+                                with open(f'NewsFirst_Articals/{thisYear}/news1st_{FileDate}_{num_artical}.txt', 'w', encoding="utf-8") as file:
                                     file.write(TheRealBodyText)
                                 loop.set_description(f'artical {num_artical}')
                         except:
